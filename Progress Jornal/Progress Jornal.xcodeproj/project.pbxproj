@@ -13,6 +13,8 @@
 		ED26032A2391775500A67BAE /* Progress_Jornal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED2603282391775500A67BAE /* Progress_Jornal.xcdatamodeld */; };
 		ED26032C2391775700A67BAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED26032B2391775700A67BAE /* Assets.xcassets */; };
 		ED26032F2391775700A67BAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED26032D2391775700A67BAE /* LaunchScreen.storyboard */; };
+		ED2603372391AB2400A67BAE /* ProgressTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2603362391AB2400A67BAE /* ProgressTableViewController.swift */; };
+		ED2603392391AB7800A67BAE /* CreateProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2603382391AB7800A67BAE /* CreateProgressViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		ED26032B2391775700A67BAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED26032E2391775700A67BAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED2603302391775700A67BAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED2603362391AB2400A67BAE /* ProgressTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTableViewController.swift; sourceTree = "<group>"; };
+		ED2603382391AB7800A67BAE /* CreateProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProgressViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				ED26032D2391775700A67BAE /* LaunchScreen.storyboard */,
 				ED2603302391775700A67BAE /* Info.plist */,
 				ED2603282391775500A67BAE /* Progress_Jornal.xcdatamodeld */,
+				ED2603362391AB2400A67BAE /* ProgressTableViewController.swift */,
+				ED2603382391AB7800A67BAE /* CreateProgressViewController.swift */,
 			);
 			path = "Progress Jornal";
 			sourceTree = "<group>";
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED2603372391AB2400A67BAE /* ProgressTableViewController.swift in Sources */,
 				ED2603202391775500A67BAE /* AppDelegate.swift in Sources */,
 				ED26032A2391775500A67BAE /* Progress_Jornal.xcdatamodeld in Sources */,
+				ED2603392391AB7800A67BAE /* CreateProgressViewController.swift in Sources */,
 				ED2603222391775500A67BAE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

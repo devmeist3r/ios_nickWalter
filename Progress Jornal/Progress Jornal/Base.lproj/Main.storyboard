@@ -10,13 +10,13 @@
         <!--Progress journal-->
         <scene sceneID="KfX-RE-thu">
             <objects>
-                <tableViewController id="pKE-Zb-CVw" sceneMemberID="viewController">
+                <tableViewController id="pKE-Zb-CVw" customClass="ProgressTableViewController" customModule="Progress_Jornal" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="4qx-I1-GUo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="wU5-P3-jF7">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="progressCell" id="wU5-P3-jF7">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wU5-P3-jF7" id="QwB-Rv-iED">
@@ -46,23 +46,73 @@
         <!--Image-->
         <scene sceneID="f8m-b7-ceu">
             <objects>
-                <viewController id="U75-I8-npy" sceneMemberID="viewController">
+                <viewController id="U75-I8-npy" customClass="CreateProgressViewController" customModule="Progress_Jornal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XiJ-tG-FqW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Ay-qp-dM5">
+                                <rect key="frame" x="50" y="160" width="314" height="314"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8Ay-qp-dM5" secondAttribute="height" multiplier="1:1" id="DuN-zw-cyS"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ejx-de-cSO">
+                                <rect key="frame" x="50" y="484" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMi-la-ZcN">
+                                <rect key="frame" x="177" y="528" width="60" height="30"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="eAd-XJ-glR"/>
+                                </constraints>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="addTapped:" destination="U75-I8-npy" eventType="touchUpInside" id="Y3R-Ut-Jni"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="YMi-la-ZcN" firstAttribute="centerX" secondItem="XiJ-tG-FqW" secondAttribute="centerX" id="EMQ-Hv-dsw"/>
+                            <constraint firstItem="YMi-la-ZcN" firstAttribute="top" secondItem="Ejx-de-cSO" secondAttribute="bottom" constant="10" id="K8h-NL-l8o"/>
+                            <constraint firstItem="8Ay-qp-dM5" firstAttribute="leading" secondItem="hZ7-Kw-XNn" secondAttribute="leading" constant="50" id="RXv-vB-sbv"/>
+                            <constraint firstItem="hZ7-Kw-XNn" firstAttribute="trailing" secondItem="8Ay-qp-dM5" secondAttribute="trailing" constant="50" id="SiF-IT-IC1"/>
+                            <constraint firstItem="hZ7-Kw-XNn" firstAttribute="trailing" secondItem="Ejx-de-cSO" secondAttribute="trailing" constant="50" id="VLQ-U3-Ijs"/>
+                            <constraint firstItem="Ejx-de-cSO" firstAttribute="leading" secondItem="hZ7-Kw-XNn" secondAttribute="leading" constant="50" id="XM2-sC-6lC"/>
+                            <constraint firstItem="Ejx-de-cSO" firstAttribute="top" secondItem="8Ay-qp-dM5" secondAttribute="bottom" constant="10" id="hWH-jo-gxj"/>
+                            <constraint firstItem="8Ay-qp-dM5" firstAttribute="top" secondItem="hZ7-Kw-XNn" secondAttribute="top" constant="20" id="qKR-wz-U2T"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hZ7-Kw-XNn"/>
                     </view>
                     <navigationItem key="navigationItem" title="Image" id="EP7-k8-jkQ">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="camera" id="qSC-Md-CYq"/>
-                            <barButtonItem systemItem="organize" id="Hcb-fe-Pge"/>
+                            <barButtonItem systemItem="camera" id="qSC-Md-CYq">
+                                <connections>
+                                    <action selector="cameraTapped:" destination="U75-I8-npy" id="hSR-Z3-ilB"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="organize" id="Hcb-fe-Pge">
+                                <connections>
+                                    <action selector="existingPhotoTapped:" destination="U75-I8-npy" id="Wnf-I0-3Pi"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addButton" destination="YMi-la-ZcN" id="Ylu-P1-ocT"/>
+                        <outlet property="photoImageView" destination="8Ay-qp-dM5" id="bBi-6b-QaM"/>
+                        <outlet property="titleTextField" destination="Ejx-de-cSO" id="mBN-Sq-nzs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nFP-Vf-VtS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="783" y="46"/>
+            <point key="canvasLocation" x="720" y="46"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="abU-tN-GtO">
@@ -79,22 +129,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BYt-BW-Wq6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-999" y="46"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="V8U-4j-fNq">
-            <objects>
-                <viewController id="uGg-pX-iuP" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="pzZ-Ec-Axh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="jME-gg-dRq"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="hBp-AM-qJO"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MGx-ar-6d0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-81" y="779"/>
         </scene>
     </scenes>
 </document>

@@ -9,7 +9,7 @@
 import UIKit
 
 class CreateViewController: UIViewController {
-
+    
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var importantSwitch: UISwitch!
     
@@ -17,20 +17,18 @@ class CreateViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    }
-
-    @IBAction func handleAdd(_ sender: Any) {
-        let newTodo = ToDo()
         
-        if let name = nameTextField.text {
-            newTodo.name = name
-            newTodo.important = importantSwitch.isOn
-            toDoTableVC?.toDos.append(newTodo)
-            DispatchQueue.main.async {
-                self.toDoTableVC?.tableView.reloadData()
+    }
+    
+    @IBAction func handleAdd(_ sender: Any) {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            let newToDo = ToDoItem(context: context)
+            if let name = nameTextField.text {
+                newToDo.name = name
+                newToDo.important = importantSwitch.isOn
+                (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+                navigationController?.popViewController(animated: true)
             }
-            navigationController?.popViewController(animated: true)
         }
     }
 }

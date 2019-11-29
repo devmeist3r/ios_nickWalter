@@ -10,20 +10,21 @@ import UIKit
 
 class ToDoTableViewController: UITableViewController {
     
-    var toDos: [ToDo] = []
+    var toDos: [ToDoItem] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let toDo1 = ToDo()
-        toDo1.name = "Buy milk"
-        toDo1.important = true
-        
-        let toDo2 = ToDo()
-        toDo2.name = "Walk the dog"
-        toDo2.important = false
-        
-        toDos = [toDo1, toDo2]
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            if let coreDataToDoItem = try? context.fetch(ToDoItem.fetchRequest()) as? [ToDoItem] {
+                toDos = coreDataToDoItem
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            }
+        }
     }
     
     // MARK: - Table view data source
@@ -40,7 +41,9 @@ class ToDoTableViewController: UITableViewController {
         let toDo = toDos[indexPath.row]
         
         if toDo.important {
-            cell.textLabel?.text = "❗️" + toDo.name
+            if let name = toDo.name {
+                cell.textLabel?.text = "❗️" + name
+            }
         } else {
             cell.textLabel?.text = toDo.name
         }
@@ -56,14 +59,9 @@ class ToDoTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let createVC = segue.destination as? CreateViewController {
-            createVC.toDoTableVC = self
-        }
-        
        if let completeVC = segue.destination as? CompleteViewController {
-            if let toDo = sender as? ToDo {
+            if let toDo = sender as? ToDoItem {
                 completeVC.toDo = toDo
-                completeVC.toDoTableVC = self
             }
         }
     }

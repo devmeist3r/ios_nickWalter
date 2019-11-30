@@ -14,21 +14,17 @@ class ProgressTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        loadData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        loadData()
+        getCoreDataInfo()
     }
     
-    func loadData() {
+    func getCoreDataInfo() {
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
-            if let update = try? context.fetch(ProgressUpdate.fetchRequest()) as? [ProgressUpdate] {
-                updates = update
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
+            if let coreDataProgressUpdate = try? context.fetch(ProgressUpdate.fetchRequest()) as? [ProgressUpdate] {
+                updates = coreDataProgressUpdate
+                tableView.reloadData()
             }
         }
     }
@@ -36,8 +32,7 @@ class ProgressTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return updates.count
     }
 
     
@@ -46,12 +41,42 @@ class ProgressTableViewController: UITableViewController {
         
         let progressUpdate = updates[indexPath.row]
         
+        if let imageData = progressUpdate.image {
+            cell.imageView?.image = UIImage(data: imageData)
+        }
+        
         cell.textLabel?.text = progressUpdate.title
 
-        return UITableViewCell()
+        return cell
     }
     
-
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
+    }
    
 
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let progressUpdate = updates[indexPath.row]
+            if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+                context.delete(progressUpdate)
+                (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+                getCoreDataInfo()
+            }
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       let progressUpdate = updates[indexPath.row]
+        performSegue(withIdentifier: "showUpdate", sender: progressUpdate)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewProgressVC = segue.destination as? ViewProgressUpdateViewController {
+            if let progressUpdate = sender as? ProgressUpdate {
+                viewProgressVC.progressUpdate = progressUpdate
+            }
+        }
+    }
+    
 }

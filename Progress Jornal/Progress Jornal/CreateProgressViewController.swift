@@ -21,8 +21,8 @@ class CreateProgressViewController: UIViewController, UIImagePickerControllerDel
         
         addButton.layer.cornerRadius = addButton.frame.size.height / 2
         pickerController.delegate = self
+        
     }
-    
     
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {

@@ -7,33 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E89859C823922CF200D568ED /* ViewProgressUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89859C723922CF200D568ED /* ViewProgressUpdateViewController.swift */; };
-		ED2603202391775500A67BAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED26031F2391775500A67BAE /* AppDelegate.swift */; };
-		ED2603222391775500A67BAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2603212391775500A67BAE /* SceneDelegate.swift */; };
-		ED2603272391775500A67BAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED2603252391775500A67BAE /* Main.storyboard */; };
-		ED26032A2391775500A67BAE /* Progress_Jornal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED2603282391775500A67BAE /* Progress_Jornal.xcdatamodeld */; };
-		ED26032C2391775700A67BAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED26032B2391775700A67BAE /* Assets.xcassets */; };
-		ED26032F2391775700A67BAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED26032D2391775700A67BAE /* LaunchScreen.storyboard */; };
-		ED2603372391AB2400A67BAE /* ProgressTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2603362391AB2400A67BAE /* ProgressTableViewController.swift */; };
-		ED2603392391AB7800A67BAE /* CreateProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2603382391AB7800A67BAE /* CreateProgressViewController.swift */; };
+		E85234AD2392317F00ACE8BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85234AC2392317F00ACE8BB /* AppDelegate.swift */; };
+		E85234AF2392317F00ACE8BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85234AE2392317F00ACE8BB /* SceneDelegate.swift */; };
+		E85234B12392317F00ACE8BB /* BitcoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85234B02392317F00ACE8BB /* BitcoinViewController.swift */; };
+		E85234B42392317F00ACE8BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E85234B22392317F00ACE8BB /* Main.storyboard */; };
+		E85234B62392318000ACE8BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E85234B52392318000ACE8BB /* Assets.xcassets */; };
+		E85234B92392318000ACE8BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E85234B72392318000ACE8BB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E89859C723922CF200D568ED /* ViewProgressUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProgressUpdateViewController.swift; sourceTree = "<group>"; };
-		ED26031C2391775500A67BAE /* Progress Jornal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Progress Jornal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED26031F2391775500A67BAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ED2603212391775500A67BAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ED2603262391775500A67BAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		ED2603292391775500A67BAE /* Progress_Jornal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Progress_Jornal.xcdatamodel; sourceTree = "<group>"; };
-		ED26032B2391775700A67BAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ED26032E2391775700A67BAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		ED2603302391775700A67BAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED2603362391AB2400A67BAE /* ProgressTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTableViewController.swift; sourceTree = "<group>"; };
-		ED2603382391AB7800A67BAE /* CreateProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProgressViewController.swift; sourceTree = "<group>"; };
+		E85234A92392317F00ACE8BB /* Bitcoin Pricw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bitcoin Pricw.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E85234AC2392317F00ACE8BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E85234AE2392317F00ACE8BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E85234B02392317F00ACE8BB /* BitcoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinViewController.swift; sourceTree = "<group>"; };
+		E85234B32392317F00ACE8BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E85234B52392318000ACE8BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E85234B82392318000ACE8BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E85234BA2392318000ACE8BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		ED2603192391775500A67BAE /* Frameworks */ = {
+		E85234A62392317F00ACE8BB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,75 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		ED2603132391775500A67BAE = {
+		E85234A02392317F00ACE8BB = {
 			isa = PBXGroup;
 			children = (
-				ED26031E2391775500A67BAE /* Progress Jornal */,
-				ED26031D2391775500A67BAE /* Products */,
+				E85234AB2392317F00ACE8BB /* Bitcoin Pricw */,
+				E85234AA2392317F00ACE8BB /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		ED26031D2391775500A67BAE /* Products */ = {
+		E85234AA2392317F00ACE8BB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ED26031C2391775500A67BAE /* Progress Jornal.app */,
+				E85234A92392317F00ACE8BB /* Bitcoin Pricw.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ED26031E2391775500A67BAE /* Progress Jornal */ = {
+		E85234AB2392317F00ACE8BB /* Bitcoin Pricw */ = {
 			isa = PBXGroup;
 			children = (
-				ED26031F2391775500A67BAE /* AppDelegate.swift */,
-				ED2603212391775500A67BAE /* SceneDelegate.swift */,
-				ED2603252391775500A67BAE /* Main.storyboard */,
-				ED26032B2391775700A67BAE /* Assets.xcassets */,
-				ED26032D2391775700A67BAE /* LaunchScreen.storyboard */,
-				ED2603302391775700A67BAE /* Info.plist */,
-				ED2603282391775500A67BAE /* Progress_Jornal.xcdatamodeld */,
-				ED2603362391AB2400A67BAE /* ProgressTableViewController.swift */,
-				ED2603382391AB7800A67BAE /* CreateProgressViewController.swift */,
-				E89859C723922CF200D568ED /* ViewProgressUpdateViewController.swift */,
+				E85234AC2392317F00ACE8BB /* AppDelegate.swift */,
+				E85234AE2392317F00ACE8BB /* SceneDelegate.swift */,
+				E85234B02392317F00ACE8BB /* BitcoinViewController.swift */,
+				E85234B22392317F00ACE8BB /* Main.storyboard */,
+				E85234B52392318000ACE8BB /* Assets.xcassets */,
+				E85234B72392318000ACE8BB /* LaunchScreen.storyboard */,
+				E85234BA2392318000ACE8BB /* Info.plist */,
 			);
-			path = "Progress Jornal";
+			path = "Bitcoin Pricw";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ED26031B2391775500A67BAE /* Progress Jornal */ = {
+		E85234A82392317F00ACE8BB /* Bitcoin Pricw */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED2603332391775700A67BAE /* Build configuration list for PBXNativeTarget "Progress Jornal" */;
+			buildConfigurationList = E85234BD2392318000ACE8BB /* Build configuration list for PBXNativeTarget "Bitcoin Pricw" */;
 			buildPhases = (
-				ED2603182391775500A67BAE /* Sources */,
-				ED2603192391775500A67BAE /* Frameworks */,
-				ED26031A2391775500A67BAE /* Resources */,
+				E85234A52392317F00ACE8BB /* Sources */,
+				E85234A62392317F00ACE8BB /* Frameworks */,
+				E85234A72392317F00ACE8BB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Progress Jornal";
-			productName = "Progress Jornal";
-			productReference = ED26031C2391775500A67BAE /* Progress Jornal.app */;
+			name = "Bitcoin Pricw";
+			productName = "Bitcoin Pricw";
+			productReference = E85234A92392317F00ACE8BB /* Bitcoin Pricw.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		ED2603142391775500A67BAE /* Project object */ = {
+		E85234A12392317F00ACE8BB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Lucas Inocencio";
 				TargetAttributes = {
-					ED26031B2391775500A67BAE = {
+					E85234A82392317F00ACE8BB = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
 			};
-			buildConfigurationList = ED2603172391775500A67BAE /* Build configuration list for PBXProject "Progress Jornal" */;
+			buildConfigurationList = E85234A42392317F00ACE8BB /* Build configuration list for PBXProject "Bitcoin Pricw" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -119,58 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = ED2603132391775500A67BAE;
-			productRefGroup = ED26031D2391775500A67BAE /* Products */;
+			mainGroup = E85234A02392317F00ACE8BB;
+			productRefGroup = E85234AA2392317F00ACE8BB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ED26031B2391775500A67BAE /* Progress Jornal */,
+				E85234A82392317F00ACE8BB /* Bitcoin Pricw */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		ED26031A2391775500A67BAE /* Resources */ = {
+		E85234A72392317F00ACE8BB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED26032F2391775700A67BAE /* LaunchScreen.storyboard in Resources */,
-				ED26032C2391775700A67BAE /* Assets.xcassets in Resources */,
-				ED2603272391775500A67BAE /* Main.storyboard in Resources */,
+				E85234B92392318000ACE8BB /* LaunchScreen.storyboard in Resources */,
+				E85234B62392318000ACE8BB /* Assets.xcassets in Resources */,
+				E85234B42392317F00ACE8BB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		ED2603182391775500A67BAE /* Sources */ = {
+		E85234A52392317F00ACE8BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED2603372391AB2400A67BAE /* ProgressTableViewController.swift in Sources */,
-				E89859C823922CF200D568ED /* ViewProgressUpdateViewController.swift in Sources */,
-				ED2603202391775500A67BAE /* AppDelegate.swift in Sources */,
-				ED26032A2391775500A67BAE /* Progress_Jornal.xcdatamodeld in Sources */,
-				ED2603392391AB7800A67BAE /* CreateProgressViewController.swift in Sources */,
-				ED2603222391775500A67BAE /* SceneDelegate.swift in Sources */,
+				E85234B12392317F00ACE8BB /* BitcoinViewController.swift in Sources */,
+				E85234AD2392317F00ACE8BB /* AppDelegate.swift in Sources */,
+				E85234AF2392317F00ACE8BB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ED2603252391775500A67BAE /* Main.storyboard */ = {
+		E85234B22392317F00ACE8BB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ED2603262391775500A67BAE /* Base */,
+				E85234B32392317F00ACE8BB /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		ED26032D2391775700A67BAE /* LaunchScreen.storyboard */ = {
+		E85234B72392318000ACE8BB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ED26032E2391775700A67BAE /* Base */,
+				E85234B82392318000ACE8BB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -178,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		ED2603312391775700A67BAE /* Debug */ = {
+		E85234BB2392318000ACE8BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -238,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		ED2603322391775700A67BAE /* Release */ = {
+		E85234BC2392318000ACE8BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -292,36 +280,36 @@
 			};
 			name = Release;
 		};
-		ED2603342391775700A67BAE /* Debug */ = {
+		E85234BE2392318000ACE8BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y65JAZKR5L;
-				INFOPLIST_FILE = "Progress Jornal/Info.plist";
+				INFOPLIST_FILE = "Bitcoin Pricw/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.devmeist3r.Progress-Jornal";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devemeist3r.Bitcoin-Pricw";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		ED2603352391775700A67BAE /* Release */ = {
+		E85234BF2392318000ACE8BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y65JAZKR5L;
-				INFOPLIST_FILE = "Progress Jornal/Info.plist";
+				INFOPLIST_FILE = "Bitcoin Pricw/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.devmeist3r.Progress-Jornal";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devemeist3r.Bitcoin-Pricw";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -331,38 +319,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ED2603172391775500A67BAE /* Build configuration list for PBXProject "Progress Jornal" */ = {
+		E85234A42392317F00ACE8BB /* Build configuration list for PBXProject "Bitcoin Pricw" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ED2603312391775700A67BAE /* Debug */,
-				ED2603322391775700A67BAE /* Release */,
+				E85234BB2392318000ACE8BB /* Debug */,
+				E85234BC2392318000ACE8BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED2603332391775700A67BAE /* Build configuration list for PBXNativeTarget "Progress Jornal" */ = {
+		E85234BD2392318000ACE8BB /* Build configuration list for PBXNativeTarget "Bitcoin Pricw" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ED2603342391775700A67BAE /* Debug */,
-				ED2603352391775700A67BAE /* Release */,
+				E85234BE2392318000ACE8BB /* Debug */,
+				E85234BF2392318000ACE8BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		ED2603282391775500A67BAE /* Progress_Jornal.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				ED2603292391775500A67BAE /* Progress_Jornal.xcdatamodel */,
-			);
-			currentVersion = ED2603292391775500A67BAE /* Progress_Jornal.xcdatamodel */;
-			path = Progress_Jornal.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = ED2603142391775500A67BAE /* Project object */;
+	rootObject = E85234A12392317F00ACE8BB /* Project object */;
 }
